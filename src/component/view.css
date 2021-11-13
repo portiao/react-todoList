@@ -1,0 +1,8 @@
+.viewLine {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.btn-01{
+    margin-top: 10px;
+}

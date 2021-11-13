@@ -20,9 +20,19 @@ function List() {
        setInputWord('');
     }
 
+    //點擊刪除內容
+    function deleHandle(i){
+        //拷貝新陣列
+        const newArray=[...writeList];
+        //刪除屬性
+        newArray.splice(i,1);
+        //把修改後陣列寫回輸入內容
+        setWriteList(newArray);
+    }
+
     return (
         <>
-            <View inputWord={inputWord} setInputWord={setInputWord} writeList={writeList} setWriteList={setWriteList} clickHandle={clickHandle}/>
+            <View inputWord={inputWord} setInputWord={setInputWord} writeList={writeList} setWriteList={setWriteList} clickHandle={clickHandle} deleHandle={deleHandle}/>
         </>
     )
 }
